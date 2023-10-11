@@ -1,0 +1,43 @@
+#landing-page{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+}
+#landing-page .column{
+    width: 50%;
+    font-size: 30px;
+    margin-top: 20%;
+}
+#landing-page img{
+    width: 100%;
+}
+
+footer{
+    background-color:rgb(90, 152, 181);
+    padding: 5%;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer #row1
+{
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 34px;
+}
+footer .row2
+{   
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+footer .row2 .icons{
+    display: flex;
+}
+footer .row2 .icons a{
+   color: aliceblue;
+   margin-left: 20px;
+}
+.icons{
+  color: brown;
+}

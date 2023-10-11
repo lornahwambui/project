@@ -47,5 +47,19 @@ addform.addEventListener("submit", function (event) {
     const image_url = document.getElementById("image_url").value;
     console.log("description:", description);
     console.log("image_url:", image_url);
-});
 
+    fetch(`http://localhost:5000/catfacts`, {
+        method: "POST",
+        body: JSON.stringify({
+            description: description,
+            image: image_url
+        }),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        alert("Blog created"); 
+    });
+});

@@ -1,26 +1,25 @@
 {
-  "catfacts":[
-      {
-        "id": 1,
-        "image": "https://play-lh.googleusercontent.com/ZCY6FSY545GwyveH1qC3YOT15ud9xhqPbp5TdEbTa1F0lCxTS9KukvGrDersh4KGvQ=w600-h300-pc0xffffff-pd",
-        "description": "The average age for an indoor cat is 15 years while the average age for an outdoor cat is only 3-5 years"
-      },
-      {
-        "id": 2,
-        "image": "https://t4.ftcdn.net/jpg/05/62/99/31/360_F_562993122_e7pGkeY8yMfXJcRmclsoIjtOoVDDgIlh.jpg",
-        "description": "Japan, cats are thought to have the power to turn into super spirits when they die. This may stem from the Buddist believe that cats are temporary resting places for powerful and very spiritual people. "
-      },
-      {
-        "id": 3,
-        "image": "https://media.istockphoto.com/id/1361394182/photo/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised.jpg?s=612x612&w=0&k=20&c=6yvVxdufrNvkmc50nCLCd8OFGhoJd6vPTNotl90L-vo=",
-        "description": "The Egyptian Mau is one of, if not the oldest domesticated cat breed"
-      },
-      {
-        "id": 4,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQimKe7kKlxIGaC-q-ep5Qd7wKDb8IP4AaBkw4dhSl5JL-v-5TB5QtIxL73JumNoje1I&usqp=CAU",
-        "description": "Cat's, as well as other animals' noses,  have their own unique print, much like a humans fingerprint."
-      }
-      
-      
-    ]
-  }
+  "catfacts": [
+    {
+      "id": 1,
+      "image": "https://play-lh.googleusercontent.com/ZCY6FSY545GwyveH1qC3YOT15ud9xhqPbp5TdEbTa1F0lCxTS9KukvGrDersh4KGvQ=w600-h300-pc0xffffff-pd",
+      "description": "The average age for an indoor cat is 15 years while the average age for an outdoor cat is only 3-5 years"
+    },
+    {
+      "id": 2,
+      "image": "https://t4.ftcdn.net/jpg/05/62/99/31/360_F_562993122_e7pGkeY8yMfXJcRmclsoIjtOoVDDgIlh.jpg",
+      "description": "Japan, cats are thought to have the power to turn into super spirits when they die. This may stem from the Buddist believe that cats are temporary resting places for powerful and very spiritual people. "
+    },
+    {
+      "id": 3,
+      "image": "https://media.istockphoto.com/id/1361394182/photo/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised.jpg?s=612x612&w=0&k=20&c=6yvVxdufrNvkmc50nCLCd8OFGhoJd6vPTNotl90L-vo=",
+      "description": "The Egyptian Mau is one of, if not the oldest domesticated cat breed"
+    },
+    {
+      "id": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQimKe7kKlxIGaC-q-ep5Qd7wKDb8IP4AaBkw4dhSl5JL-v-5TB5QtIxL73JumNoje1I&usqp=CAU",
+      "description": "Cat's, as well as other animals' noses,  have their own unique print, much like a humans fingerprint."
+    }
+   
+  ]
+}

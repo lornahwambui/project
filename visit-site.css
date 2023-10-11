@@ -1,0 +1,66 @@
+/* Body styles */
+body {
+    background-color: black;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #007BFF; /* Use the color you prefer */
+}
+
+/* Navbar brand text */
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar toggle icon color */
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+/* Container styles */
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Card styles */
+#card {
+    background-color: #333; /* Use the color you prefer */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card image styles */
+#card img {
+    width: 100px; /* Adjust the image size as needed */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Card description styles */
+#card h6 {
+    margin-top: 10px;
+}
+#deleteBtn{
+    
+    background-color: #bd5151;
+    border: none;
+    
+}
+#deleteBtn :hover{
+    cursor: pointer;
+
+}
+
+
+

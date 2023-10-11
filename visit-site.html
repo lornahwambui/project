@@ -4,7 +4,7 @@
    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./visit-site.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="visit-site.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>Cat Facts</title>
@@ -12,27 +12,59 @@
 <body>
     <style>
         body {
-       background-image: url("./images/cat3.jpeg");   
+       background-color: black; 
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    margin: auto;
+    color: white;
     }
     </style>
     <!--navbar-->
     <div>
         <nav class=" navbar navbar-expand-lg bg-primary">
             <div class="container-fluid">
-              <a class="navbar-brand text-dark" href="#">CatFacts</a>
+              <a class="navbar-brand text-dark" href="#">Meows Site</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active text-primary-emphasis" aria-current="page" href="introduction.html"> Home</a>
+                  </li>
+                  <!--click the home button to go back to introduction page-->
+                 
+                  
+                </ul>
+              </div>
             </div>
           </nav>
 
     </div>
+    <div>
+        <h1 style="color: brown;">Meows facts..........</h1>
+    </div>
+    <div>
+        <form id="addform">
+            <input type="text"id="description" placeholder="Enter Fact">
+            <input type="text"id="image_url" placeholder="Enter Image url">
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <div id="container">
+        <div id="all_blogs">
+
+        </div>
+        <div id="single_blog">
+
+        </div>
+
+    </div>
 
     
-    <script src="index.js"></script>
+    <script src="./visite-site.js"></script>
 </body>
 </html>

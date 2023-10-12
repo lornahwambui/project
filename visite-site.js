@@ -91,9 +91,9 @@ function edit(id) {
             const update_description = document.getElementById("update_description").value;
             const update_image_url = document.getElementById("update_image_url").value;
 
-            // Make a PUT or PATCH request to update the data on the server
+            //  PATCH request to update the data on the server
             fetch(`http://localhost:5000/catfacts/${id}`, {
-                method: "PATCH", // Use PATCH or PUT as appropriate
+                method: "PATCH",  
                 body: JSON.stringify({
                     description: update_description,
                     image_url: update_image_url

@@ -4,13 +4,12 @@
     
 This project consists of two web pages: one for displaying cat facts and another for sharing interesting cat-related information, also known as "Meows Facts." The project is designed to provide users with fun and fascinating facts about cats.
 
-- The "Cats Facts" page displays a collection of cat facts and allows users to read, add, edit, or delete facts.
-
-- The "Meows Facts" page focuses on sharing interesting cat-related facts, and it allows users to view, add, edit, and delete Meows facts.
+  - The "Cats Facts" is the main page of the site.
+  - The "Meows Facts" page focuses on sharing interesting cat-related facts, and it allows users to view, add, edit, and delete Meows facts.
 ## Setup/Installation Requirements
     1. Clone this repository to your local machine.
-2. Open the "Cats Facts" page (`introduction.html`) in your web browser to view cat facts.
-3. To add, edit, or delete facts, you'll need to host the project on a web server and set up the server backend. This README focuses on the frontend part.
+    2. Open the "Cats Facts" page (`introduction.html`) in your web browser to view cat facts.
+    3. To add, edit, or delete facts, you'll need to host the project on a web server and set up the server backend. This README focuses on the frontend part.
 
 ## Meows Facts Page
 
@@ -23,9 +22,9 @@ This project consists of two web pages: one for displaying cat facts and another
 
 ### Getting Started
 
-1. Clone this repository to your local machine.
-2. Open the "Meows Facts" page (`visit-site.html`) in your web browser to view Meows facts.
-3. To add, edit, or delete facts, you'll need to host the project on a web server and set up the server backend. 
+   1. Clone this repository to your local machine.
+   2. Open the "Meows Facts" page (`visit-site.html`) in your web browser to view Meows facts.
+   3. To add, edit, or delete facts, you'll need to host the project on a web server and set up the server backend. 
 
  ## Known Bugs
     The application images dissapears in heroku

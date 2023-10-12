@@ -23,8 +23,9 @@ This project consists of two web pages: one for displaying cat facts and another
 ### Getting Started
 
    1. Clone this repository to your local machine.
-   2. Open the "Meows Facts" page (`visit-site.html`) in your web browser to view Meows facts.
-   3. To add, edit, or delete facts, you'll need to host the project on a web server and set up the server backend. 
+   2.run your server json-server --watch database.json --port 5000
+   3. Open the "Meows Facts" page (`visit-site.html`) in your web browser to view Meows facts.
+   4. To add, edit, or delete facts, you'll need to host the project on a web server and set up the server backend. 
 
  ## Known Bugs
     The application images dissapears in heroku

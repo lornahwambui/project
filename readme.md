@@ -40,7 +40,7 @@ This project consists of two web pages: one for displaying cat facts and another
 
 ## Support and contact details
     - email :: lornah.gitau@student.moringaschool.com
-    - phone :: +254799900951
+    - phone :: +25479990055552
 
 ### License
 *Licenced under the MIT Licence

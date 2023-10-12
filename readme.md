@@ -9,7 +9,7 @@ This project consists of two web pages: one for displaying cat facts and another
 ## Setup/Installation Requirements
     1. Clone this repository to your local machine.
     2. Open the "Cats Facts" page (`introduction.html`) in your web browser to view cat facts.
-    3. To add, edit, or delete facts, you'll need to host the project on a web server and set up the server backend. This README focuses on the frontend part.
+    
 
 ## Meows Facts Page
 

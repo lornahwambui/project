@@ -1,4 +1,4 @@
-fetch("http://localhost:5000/catfacts", {
+fetch("https://catfacts.onrender.com/catfacts", {
     method: "GET"
 })
 .then((response) => response.json())
@@ -18,7 +18,7 @@ fetch("http://localhost:5000/catfacts", {
 })
 function displaySingleblog(id){
     console.log('function called',id);
-    fetch(`http://localhost:5000/catfacts/${id}`, {
+    fetch(`https://catfacts.onrender.com//${id}`, {
     method: "GET"
 })
 .then((response) => response.json())
@@ -31,7 +31,7 @@ function displaySingleblog(id){
 //delete single blog
 function deleteBlog(id){
     
-    fetch(`http://localhost:5000/catfacts/${id}`, {
+    fetch(`https://catfacts.onrender.com/${id}`, {
     method: "DELETE"
 })
 .then((response) => response.json())
@@ -49,7 +49,7 @@ addform.addEventListener("submit", function (event) {
     console.log("description:", description);
     console.log("image_url:", image_url);
 
-    fetch(`http://localhost:5000/catfacts`, {
+    fetch(`https://catfacts.onrender.com/catfacts`, {
         method: "POST",
         body: JSON.stringify({
             description: description,
@@ -68,7 +68,7 @@ addform.addEventListener("submit", function (event) {
 //update function
 function edit(id) {
     // Fetch the existing data
-    fetch(`http://localhost:5000/catfacts/${id}`, {
+    fetch(`https://catfacts.onrender.com/${id}`, {
         method: "GET"
     })
     .then((response) => response.json())
@@ -92,7 +92,7 @@ function edit(id) {
             const update_image_url = document.getElementById("update_image_url").value;
 
             //  PATCH request to update the data on the server
-            fetch(`http://localhost:5000/catfacts/${id}`, {
+            fetch(`https://catfacts.onrender.com/${id}`, {
                 method: "PATCH",  
                 body: JSON.stringify({
                     description: update_description,

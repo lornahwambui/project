@@ -75,7 +75,9 @@ function update(id) {
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
-        const updateContainer = document.getElementById("updateContainer");
+        // const updateContainer = document.getElementById("updateContainer");
+        const updateContainer = document.createElement('div');
+
         updateContainer.innerHTML = `
             <h6>Update Form</h6>
             <form id="updateform">
@@ -84,6 +86,7 @@ function update(id) {
                 <button type="submit">Update</button>
             </form>
         `;
+        document.body.append(updateContainer);
         
         // Listen for the form submission
         const updateform = document.getElementById("updateform");

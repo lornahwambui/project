@@ -75,7 +75,7 @@ function update(id) {
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
-        console.log("description: "+data.description)
+        console.log("description: "+data[0].description)
         const updateContainer = document.getElementById("updateContainer");
         // const updateContainer = document.createElement('div');
 

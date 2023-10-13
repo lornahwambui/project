@@ -61,24 +61,24 @@ body {
     cursor: pointer;
 
 }
-  .footer {
+.footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px;
-        }
+}
         
         /* Icon styles */
-        .footer a {
+.footer a {
             color: brown;
             text-decoration: none;
             margin: 0 10px;
-        }
+}
         
         /* Company name styles */
-        .company-name {
+.company-name {
             font-weight: bold;
-        }
+}
 
 
 

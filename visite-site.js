@@ -81,8 +81,8 @@ function update(id) {
         updateContainer.innerHTML = `
             <h6>Update Form</h6>
             <form id="updateform">
-                <input type="text" id="update_description" placeholder="Enter description" value="${data[0].description}">
-                <input type="text" id="update_image_url" placeholder="Enter Image URL" value="${data[0].image}">
+                <input type="text" id="update_description" placeholder="Enter description" name="update_description" value="${data[0].description}">
+                <input type="text" id="update_image_url" placeholder="Enter Image URL" name="update_image_url"value="${data[0].image}">
                 <button type="submit">Update</button>
             </form>
         `;
@@ -93,16 +93,18 @@ function update(id) {
         const updateform = document.getElementById("updateform");
         updateform.addEventListener('submit', function (event) {
             event.preventDefault();
-            const update_description = document.getElementById("update_description").value;
-            const update_image_url = document.getElementById("update_image_url").value;
+            const update_description = updateform.elements["update_description"].value;
+            const update_image_url = updateform.elements["update_image_url"].value;
             updateContainer.innerHTML ='';
 
+            console.log(update_description);
+
             //  PATCH request to update the data on the server
-            fetch(`https://catfacts.onrender.com/${id}`, {
+            fetch(`https://catfacts.onrender.com/api/backend/catfacts/${id}`, {
                 method: "PATCH",  
                 body: JSON.stringify({
                     description: update_description,
-                    image_url: update_image_url
+                    image: update_image_url
                 }),
                 headers: {
                     "Content-Type": "application/json"

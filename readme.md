@@ -2,9 +2,7 @@
 #### **By Lornah Gitau**
 ## Project Description
     
-This project consists of two web pages: one for displaying cat facts and another for sharing interesting cat-related information, also known as "Meows Facts." The project is designed to provide users with fun and fascinating facts about cats.
-
-  - The "Cats Facts" is the main page of the site.
+This project consists of one web page:  for sharing interesting cat-related information, also known as "Meows Facts." The project is designed to provide users with fun and fascinating facts about cats.
   - The "Meows Facts" page focuses on sharing interesting cat-related facts, and it allows users to view, add, edit, and delete Meows facts.
 ## Setup/Installation Requirements
 ## Meows Facts Page

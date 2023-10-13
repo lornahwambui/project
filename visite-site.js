@@ -75,6 +75,7 @@ function update(id) {
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
+        console.log("description: "+data.description)
         const updateContainer = document.getElementById("updateContainer");
         // const updateContainer = document.createElement('div');
 
@@ -86,6 +87,7 @@ function update(id) {
                 <button type="submit">Update</button>
             </form>
         `;
+
         document.body.append(updateContainer);
         
         // Listen for the form submission
@@ -94,6 +96,7 @@ function update(id) {
             event.preventDefault();
             const update_description = document.getElementById("update_description").value;
             const update_image_url = document.getElementById("update_image_url").value;
+            updateContainer.innerHTML ='';
 
             //  PATCH request to update the data on the server
             fetch(`https://catfacts.onrender.com/${id}`, {

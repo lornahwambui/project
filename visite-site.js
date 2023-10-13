@@ -75,8 +75,8 @@ function update(id) {
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
-        // const updateContainer = document.getElementById("updateContainer");
-        const updateContainer = document.createElement('div');
+        const updateContainer = document.getElementById("updateContainer");
+        // const updateContainer = document.createElement('div');
 
         updateContainer.innerHTML = `
             <h6>Update Form</h6>

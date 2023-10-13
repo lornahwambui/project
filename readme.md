@@ -7,10 +7,6 @@ This project consists of two web pages: one for displaying cat facts and another
   - The "Cats Facts" is the main page of the site.
   - The "Meows Facts" page focuses on sharing interesting cat-related facts, and it allows users to view, add, edit, and delete Meows facts.
 ## Setup/Installation Requirements
-    1. Clone this repository to your local machine.
-    2. Open the "Cats Facts" page (`introduction.html`) in your web browser to view cat facts.
-    
-
 ## Meows Facts Page
 
 ### Features

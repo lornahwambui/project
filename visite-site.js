@@ -75,15 +75,15 @@ function update(id) {
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
-        console.log("description: "+data[0].description)
+
         const updateContainer = document.getElementById("updateContainer");
         // const updateContainer = document.createElement('div');
 
         updateContainer.innerHTML = `
             <h6>Update Form</h6>
             <form id="updateform">
-                <input type="text" id="update_description" placeholder="Enter description" value="${data.description}">
-                <input type="text" id="update_image_url" placeholder="Enter Image URL" value="${data.image_url}">
+                <input type="text" id="update_description" placeholder="Enter description" value="${data[0].description}">
+                <input type="text" id="update_image_url" placeholder="Enter Image URL" value="${data[0].image_url}">
                 <button type="submit">Update</button>
             </form>
         `;

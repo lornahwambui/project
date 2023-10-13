@@ -77,13 +77,12 @@ function update(id) {
         console.log(data);
 
         const updateContainer = document.getElementById("updateContainer");
-        // const updateContainer = document.createElement('div');
 
         updateContainer.innerHTML = `
             <h6>Update Form</h6>
             <form id="updateform">
                 <input type="text" id="update_description" placeholder="Enter description" value="${data[0].description}">
-                <input type="text" id="update_image_url" placeholder="Enter Image URL" value="${data[0].image_url}">
+                <input type="text" id="update_image_url" placeholder="Enter Image URL" value="${data[0].image}">
                 <button type="submit">Update</button>
             </form>
         `;

@@ -11,7 +11,7 @@ fetch("https://catfacts.onrender.com/api/backend/catfacts", {
         <img onclick="displaySingleblog(${element.id})"src="${element.image}">
         <h6>${element.description}</h6>
         <button onClick="deleteBlog(${element.id})" id="deleteBtn">Delete</button>
-        <button onClick="edit(${element.id})">Edit</button>
+        <button onClick="update(${element.id})">Edit</button>
 
         </div>`;
     });
@@ -67,7 +67,7 @@ addform.addEventListener("submit", function (event) {
 
 //update function
 // https://catfacts.onrender.com/api/backend/catfacts/?id=1
-function edit(id) {
+function update(id) {
     // Fetch the existing data
     fetch(`https://catfacts.onrender.com/api/backend/catfacts/?id=${id}`, {
         method: "GET"

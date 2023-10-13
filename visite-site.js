@@ -1,21 +1,28 @@
-fetch("https://catfacts.onrender.com/catfacts", {
-    method: "GET"
-})
-    .then((response) => response.json())
-    .then((data) => {
-        const all_blogs = document.getElementById("all_blogs");
 
-        data.map((element) => {
-            console.log(element);
-            all_blogs.innerHTML += `<div  id="card">
-        <img onclick="displaySingleblog(${element.id})"src="${element.image}">
-        <h6>${element.description}</h6>
-        <button onClick="deleteBlog(${element.id})" id="deleteBtn">Delete</button>
-        <button onClick="update(${element.id})">Edit</button>
-
-        </div>`;
-        });
-    })
+function refresh(){
+    window.location.reload()
+}
+getAll()
+    function getAll(){
+        fetch("https://catfacts.onrender.com/catfacts", {
+            method: "GET"
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                const all_blogs = document.getElementById("all_blogs");
+                all_blogs.innerHTML = ""
+                data.map((element) => {
+                    console.log(element);
+                    all_blogs.innerHTML += `<div  id="card">
+                <img onclick="displaySingleblog(${element.id})"src="${element.image}">
+                <h6>${element.description}</h6>
+                <button onClick="deleteBlog(${element.id})" id="deleteBtn">Delete</button>
+                <button onClick="update(${element.id})">Edit</button>
+        
+                </div>`;
+                });
+            })  
+    }
 function displaySingleblog(id) {
     console.log('function called', id);
     fetch(`https://catfacts.onrender.com/catfacts/${id}`, {
@@ -38,6 +45,7 @@ function deleteBlog(id) {
         .then((data) => {
             console.log(data)
             alert("Blog deleted")
+            refresh()
         })
 
 }
@@ -63,11 +71,13 @@ addform.addEventListener("submit", function (event) {
         .then((response) => response.json())
         .then((data) => {
             alert("Blog created");
+            refresh()
+            
         });
 });
 
 //update function
-// https://catfacts.onrender.com/catfacts/?id=1
+
 function update(id) {
     // Fetch the existing data
     fetch(`https://catfacts.onrender.com/catfacts/?id=${id}`, {
@@ -102,7 +112,7 @@ function update(id) {
 
                 //  PATCH request to update the data on the server
                 fetch(`https://catfacts.onrender.com/catfacts/${id}`, {
-                    method: "PATCH",
+                    method: "PUT",
                     body: JSON.stringify({
                         description: update_description,
                         image: update_image_url
@@ -114,6 +124,7 @@ function update(id) {
                     .then((response) => response.json())
                     .then((updatedData) => {
                         console.log("Data updated:", updatedData);
+                        refresh()
                     });
             });
         });
